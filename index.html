@@ -7,9 +7,6 @@
 	<title>GIFT Schools</title>
 	<link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
 
-	<!-- CSS Style-->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 	<!--Bootstrap Icons-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
@@ -21,17 +18,17 @@
 
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Baloo+2&family=Patrick+Hand&family=Red+Hat+Display:wght@300&family=Tajawal:wght@200;300;400&display=swap');
-	</style>
-
 	<!--Font Awesome Icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- CSS Style-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
+	<section id="navigation">
 	<header id="header">
-		<nav id="primarytop" class="navbar navbar-expand-lg navbar-light shadow fixed-top navbar-bg-onscroll">
+		<nav id="primarytop" class="navbar navbar-expand-lg navbar-light shadow fixed-top">
   			<div class="container">
     			<a class="navbar-brand" href="index.html" title="GIFT Schools">
       				<img src="assets/img/logo.jpg" width="60" class="img-fluid" alt="GIFT Schools"/>
@@ -40,26 +37,26 @@
     			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
      	 			<span class="navbar-toggler-icon" style="font-size: 15px;"></span>
     			</button>
-    			<div class="collapse navbar-collapse " id="navbarText">
-      				<ul class="navbar-nav ml-auto" id="navbar" >
+    			<div class="collapse navbar-collapse navbar-default" id="navbarText">
+      				<ul class="navbar-nav ml-auto">
       					<li class="nav-item">
-        					<a  class="nav-link" href="index.html">Home
+        					<a  class="nav-link active" href="#">Home
         					</a>
         				</li>
         				<li class="nav-item">
-							<a class="nav-link" href="index.html#about" >About Us
+							<a class="nav-link" href="#about" >About Us
 							</a>
 						</li>
         				<li class="nav-item">
-        					<a class="nav-link" href="index.html#product">Products
+        					<a class="nav-link" href="#product">Products
         					</a>
         				</li>
         				<li class="nav-item">
-							<a class="nav-link" href="index.html#mobileapp">Mobile Apps
+							<a class="nav-link" href="#mobileapp">Mobile Apps
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="index.html#contact">Contact US
+							<a class="nav-link" href="#contact">Contact US
 							</a>
 						</li>
       				</ul>
@@ -67,10 +64,10 @@
   			</div>
 		</nav>
 	</header><br>
-
+</section>
 	<main>
 		<!-- ======= Slider Section ======= -->
-  		<section id="home"><br><br><br>
+  		<section id="home" class="page-section"><br><br><br>
     		<div class="container-fluid" data-aos="fade-in" data-aos-delay="10" data-aos-duration="100">
         		<div id="demo" class="carousel slide" data-bs-ride="carousel">
             		<!-- The slideshow/carousel -->
@@ -95,7 +92,7 @@
 
 
  		<!-- ======= About Us Section ======= -->
-		<section id="about">
+		<section id="about" class="page-section">
 			<div id="section"><hr>
 				<h2 id="section-title" class="pt-3">About Us</h2>
 			</div>
@@ -126,10 +123,10 @@
 
 
 		<!-- ======= Product Section ======= -->
-		<section id="product">
+		<section id="product" class="page-section">
 				<div id="section"><hr>
 					<h3 id="section-title" class="pt-3"><i class="fal fa-horizontal-rule"></i>Our Products</h3>
-					<p id="sub-title">〝School Management Softwares〞</p>
+					<p id="sub-title">School Management Softwares</p>
 				</div>
 			<div class="container-fluid" >
 				<div class="row pb-5 " id="row"> 
@@ -174,10 +171,10 @@
 
 
 		<!-- ======= MobileApp Section ======= -->
-		<section id="mobileapp">
+		<section id="mobileapp" class="page-section">
 			<div id="section"><hr>
 				<h2 class="pt-3" id="section-title">Mobile Apps</h2>
-				<p id="sub-title">〝Customized Mobile Application For School Management〞</p>
+				<p id="sub-title">Customized Mobile Application For School Management</p>
 			</div>
 			<div class="container-fluid">
 				<div class="row pb-5 pl-5" id="row">
@@ -200,7 +197,7 @@
 
 
 		<!-- ======= Contact Us Section ======= -->
-		<section id="contact">
+		<section id="contact" class="page-section">
 			<div id="section"><hr>
 				<h2 id="section-title" class="pt-3">Contact Us</h2>
 			</div><br>
