@@ -1,3 +1,6 @@
+
+
+/*----------go to top----------------*/
 var mybutton = document.getElementById("myBtn");
 	window.onscroll = function() {scrollFunction()};
 	function scrollFunction() {
@@ -12,46 +15,45 @@ var mybutton = document.getElementById("myBtn");
   		document.documentElement.scrollTop = 0;
 	}
 
-AOS.init(
-    		{
+
+
+/*--------------animation--------------*/
+AOS.init({
     			 offset: 60,
     			 easing: 'ease',
-    		});
+});
 
 
- on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
 
- /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
+/* Code for changing active link on clicking */
+var btns = $("#navigation .navbar-nav .nav-link");
 
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos,
-      behavior: 'smooth'
-    })
-  }
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+
+          current[0].className = current[0].className.replace(" active", "");
+
+          this.className += " active";
+    });
+}
+
+
+
+/* Code for changing active link on Scrolling */
+$(window).scroll(function () {
+
+    var distance = $(window).scrollTop();
+
+    $('.page-section').each(function (i) {
+
+          if ($(this).position().top <= distance + 250) {
+            
+            $('.navbar-nav a.active')
+              .removeClass('active');
+
+            $('.navbar-nav a').eq(i)
+              .addClass('active');
+        }
+    });
+}).scroll();
