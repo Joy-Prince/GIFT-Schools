@@ -6,17 +6,17 @@ span {
   font-size: 30px;
 
 }
+
 .nav-link {
+
 	font-family: sans-serif;
 	color: #353935;
   font-size: 16px;
 	font-weight: 600;
   padding: 10px;
-
 }
 .nav-link:hover {
   border-bottom: 2px solid #0491d6;
- 
 }
 
 .active {
@@ -26,6 +26,11 @@ span {
 
 #primarytop {
 	background-color: white;
+  /*position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;*/
 }
 @media screen and (max-width: 400px) {
  span {
@@ -34,15 +39,14 @@ span {
 }
 
 /*----------------------------------------------Main------------------------------------------------------*/
-
+#section {
+  padding-top: 50px;
+}
 #row {
   background-color:#F5F5F5;
   border-radius: 10px 10px 0px 0px;
   padding: 50px 40px 10px 40px ;
-
 }
-
-
 #section-title {
   font-family: 'Oswald', sans-serif;
   color: #36454F; 
@@ -50,13 +54,10 @@ span {
   font-size: 35px;
 }
 #sub-title {
-  font-family:'Oswald', sans-serif;
+  font-family:'Almarai', sans-serif;
   color:#707070;
   font-size: 18px;
   text-align: center;
-}
-#section {
-  padding-top: 50px;
 }
 
 
@@ -83,13 +84,6 @@ span {
   font-family:'Tajawal', sans-serif;
   line-height: 1.7;
 }
-.about {
-        -webkit-animation-duration: 6s;
-        animation-duration: 6s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-}
-
 
 
 /*-----------product-----------*/
@@ -144,7 +138,7 @@ span {
 	font-size: 17px;
 	text-decoration: none;
 	color: white;
-  font-family:cursive;
+  font-family:'Baloo 2', sans-serif;
 }
 
 .button #span {
@@ -232,12 +226,6 @@ span {
   border: 1px solid #0491d6;
   border-radius: 10px;
 }
-.contact {
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
 .button1 {
   border-radius: 50px;
   background: #29b5ce;
@@ -252,7 +240,7 @@ span {
 	font-size: 17px;
 	text-decoration: none;
 	color: #FFFFFF;
-  font-family: cursive;
+  font-family: 'Baloo 2', sans-serif;
 }
 .button1 {
 	 box-shadow: 0 2px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -317,6 +305,8 @@ span {
 #arrow {
 	 border: 0px;
 }
+
+/*--------------Go To Top------------------*/
 #myBtn {
   display: none;
   position: fixed;

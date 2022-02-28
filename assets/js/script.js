@@ -18,8 +18,8 @@ var mybutton = document.getElementById("myBtn");
 
 /*--------------animation--------------*/
 AOS.init({
-    			 offset: 60,
-    			 easing: 'ease',
+    offset: 60,
+    easing: 'ease',
 });
 
 
@@ -46,7 +46,7 @@ $(window).scroll(function () {
 
     $('.page-section').each(function (i) {
 
-          if ($(this).position().top <= distance + 200) {
+          if ($(this).position().top <= distance + 170) {
             
             $('.navbar-nav a.active')
               .removeClass('active');
@@ -56,3 +56,14 @@ $(window).scroll(function () {
         }
     });
 }).scroll();
+
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+// var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("primarytop").style.top = "0";
+//   } else {
+//     document.getElementById("primarytop").style.top = "-100px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
