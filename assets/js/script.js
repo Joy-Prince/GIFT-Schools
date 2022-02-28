@@ -1,5 +1,4 @@
 
-
 /*----------go to top----------------*/
 var mybutton = document.getElementById("myBtn");
 	window.onscroll = function() {scrollFunction()};
@@ -25,7 +24,7 @@ AOS.init({
 
 
 
-/* Code for changing active link on clicking */
+/* ----------------Code for changing active link on clicking----------------------- */
 var btns = $("#navigation .navbar-nav .nav-link");
 
 for (var i = 0; i < btns.length; i++) {
@@ -40,7 +39,7 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-/* Code for changing active link on Scrolling */
+/* ---------------------Code for changing active link on Scrolling--------------------- */
 $(window).scroll(function () {
 
     var distance = $(window).scrollTop();
