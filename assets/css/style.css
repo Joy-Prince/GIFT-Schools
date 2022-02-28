@@ -6,7 +6,9 @@ span {
   font-size: 30px;
 
 }
-
+#toggle-icon {
+  font-size: 15px;
+}
 .nav-link {
 
 	font-family: sans-serif;
@@ -32,11 +34,33 @@ span {
   display: block;
   transition: top 0.3s;*/
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px ) {
  span {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 300px ) {
+ body {
+  font-size: 10px;
+ }
+ span {
+    font-size: 15px;
+  }
+  #toggle-icon {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .navbar-toggler {
+    padding-top: 0px;
+
+  }
+  .brand {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
 
 /*----------------------------------------------Main------------------------------------------------------*/
 #section {
