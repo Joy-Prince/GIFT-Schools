@@ -47,7 +47,7 @@ $(window).scroll(function () {
 
     $('.page-section').each(function (i) {
 
-          if ($(this).position().top <= distance + 250) {
+          if ($(this).position().top <= distance + 200) {
             
             $('.navbar-nav a.active')
               .removeClass('active');
